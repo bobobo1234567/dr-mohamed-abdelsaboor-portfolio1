@@ -52,7 +52,15 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className={`space-y-2 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
               <li>
-                <a href="/assets/Dr-Mohamed-Abdelsaboor-CV.pdf" download className="hover:underline">
+                <a
+                  href="/assets/Dr-Mohamed-Abdelsaboor-CV.pdf"
+                  download
+                  className={`inline-block px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                    isDark
+                      ? 'bg-primary-600 text-white hover:bg-primary-700'
+                      : 'bg-primary-500 text-white hover:bg-primary-600'
+                  }`}
+                >
                   Download CV
                 </a>
               </li>

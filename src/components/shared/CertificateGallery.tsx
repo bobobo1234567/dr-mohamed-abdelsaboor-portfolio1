@@ -7,17 +7,19 @@ interface Certificate {
   imagePath: string;
 }
 
+const basePath = '/dr-mohamed-abdelsaboor-portfolio1/';
+
 const certificates: Certificate[] = [
-  { title: "MD Degree Certificate", imagePath: "/images/doctor-new1.jpg" },
-  { title: "Egyptian Medical Syndicate Registry", imagePath: "/images/doctor-new2.jpg" },
-  { title: "European Certification in CHD", imagePath: "/images/doctor-new5.jpg" },
-  { title: "AEPC Certification", imagePath: "/images/doctor-new6.jpg" },
-  { title: "MBBCH Certificate", imagePath: "/images/doctor-new7.jpg" },
-  { title: "MSc Degree Certificate", imagePath: "/images/doctor-new8.jpg" },
-  { title: "BLS Certificate", imagePath: "/images/doctor-new10.jpg" },
-  { title: "ACLS Certificate", imagePath: "/images/doctor-new13.jpg" },
-  { title: "PALS Provider Certificate", imagePath: "/images/doctor-new14.jpg" },
-  { title: "EPLS Certificate", imagePath: "/images/doctor-new21.jpg" }
+  { title: "MD Degree Certificate", imagePath: basePath + "images/doctor-new1.jpg" },
+  { title: "Egyptian Medical Syndicate Registry", imagePath: basePath + "images/doctor-new2.jpg" },
+  { title: "European Certification in CHD", imagePath: basePath + "images/doctor-new5.jpg" },
+  { title: "AEPC Certification", imagePath: basePath + "images/doctor-new6.jpg" },
+  { title: "MBBCH Certificate", imagePath: basePath + "images/doctor-new7.jpg" },
+  { title: "MSc Degree Certificate", imagePath: basePath + "images/doctor-new8.jpg" },
+  { title: "BLS Certificate", imagePath: basePath + "images/doctor-new10.jpg" },
+  { title: "ACLS Certificate", imagePath: basePath + "images/doctor-new13.jpg" },
+  { title: "PALS Provider Certificate", imagePath: basePath + "images/doctor-new14.jpg" },
+  { title: "EPLS Certificate", imagePath: basePath + "images/doctor-new21.jpg" }
 ];
 
 const CertificateGallery = () => {

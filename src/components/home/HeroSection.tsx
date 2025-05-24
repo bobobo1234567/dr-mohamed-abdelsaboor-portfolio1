@@ -7,6 +7,9 @@ const HeroSection = () => {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
+  // المسار الكامل للصورة بناءً على اسم الريبو على GitHub
+  const imagePath = '/dr-mohamed-abdelsaboor-portfolio1/images/doctor-new.jpg';
+
   return (
     <section className="py-10 sm:py-14 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,10 +23,10 @@ const HeroSection = () => {
               Dr. Mohamed Abdelsaboor
             </h1>
 
-            {/* الصورة تظهر فقط على شاشات صغيرة (أسفل العنوان مباشرة) */}
+            {/* الصورة تظهر فقط على شاشات صغيرة */}
             <div className="mt-4 mb-6 lg:hidden max-w-xs mx-auto rounded-xl overflow-hidden shadow-lg">
               <img
-                src="/images/doctor-new.jpg"
+                src={imagePath}
                 alt="Dr. Mohamed Abdelsaboor"
                 className="object-cover w-full h-auto rounded-xl"
               />
@@ -91,7 +94,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="rounded-xl overflow-hidden aspect-w-1 aspect-h-1 max-w-full">
                 <img
-                  src="/images/doctor-new.jpg"
+                  src={imagePath}
                   alt="Dr. Mohamed Abdelsaboor"
                   className="object-cover w-full h-full rounded-xl"
                 />

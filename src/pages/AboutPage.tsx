@@ -13,6 +13,8 @@ const AboutPage = () => {
     document.title = 'About | Dr. Mohamed Abdelsaboor';
   }, []);
 
+  const basePath = '/dr-mohamed-abdelsaboor-portfolio1/';
+
   return (
     <PageTransition>
       <section className="py-12">
@@ -46,7 +48,7 @@ const AboutPage = () => {
             <div>
               <div className="rounded-lg overflow-hidden shadow-md">
                 <img 
-                  src="images/doctor-new0.jpg" 
+                  src={`${basePath}images/doctor-new0.jpg`} 
                   alt="Dr. Mohamed Abdelsaboor" 
                   className="w-full h-auto object-cover"
                   loading="lazy"

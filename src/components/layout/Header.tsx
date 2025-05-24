@@ -72,7 +72,7 @@ const Header = ({ toggleMobileMenu, mobileMenuOpen }: HeaderProps) => {
               className={`text-lg font-extrabold ${
                 isDark ? 'text-white' : 'text-gray-900'
               }`}
-              style={{ letterSpacing: '0.03em' }} // ممكن تزود تركيز الخط شوية هنا كمان
+              style={{ letterSpacing: '0.03em' }}
             >
               Dr. Mohamed Abdelsaboor
             </span>
@@ -98,13 +98,13 @@ const Header = ({ toggleMobileMenu, mobileMenuOpen }: HeaderProps) => {
             {/* CV Download Button */}
             <a
               href="/assets/Dr-Mohamed-Abdelsaboor-CV.pdf"
-              target="_blank"
               className={`inline-flex items-center px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                 isDark
                   ? 'bg-primary-500 text-white hover:bg-primary-600'
                   : 'bg-primary-500 text-white hover:bg-primary-600'
               }`}
               download
+              aria-label="Download Dr. Mohamed Abdelsaboor CV"
             >
               Download CV
             </a>
